@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var recyclerview: RecyclerView
-    private lateinit var adapter : RecyclerAdapter // 본인이 만든 어댑터
+    private lateinit var adapter : RecyclerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         recyclerview = findViewById(R.id.recyclerView)
 
         adapter = RecyclerAdapter(list)
-        recyclerview.adapter = adapter // 리사이클러뷰 어댑터를 본인이 만든 어댑터로 설정
+        recyclerview.adapter = adapter
         recyclerview.layoutManager = LinearLayoutManager(this)
     }
 }
